@@ -1,5 +1,8 @@
+# https://uztest.ru/abstracts/?idabstract=50
+
+
 from turtle import Screen, Turtle
-from math import *
+from math import sin, pi
 
 screen = Screen()
 

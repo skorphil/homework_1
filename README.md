@@ -1,10 +1,24 @@
-First homework from the course http://judge.mipt.ru/mipt_cs_on_python3/labs/lab1.html#id39
 
-### Import
+This is first homework from the course http://judge.mipt.ru/mipt_cs_on_python3/labs/lab1.html#id39
+
+## Findings
+### Different import
 ```python
-From math import * 
+from math import * 
+```
+https://stackoverflow.com/questions/2360724/what-exactly-does-import-import
+
+
+
+```python
+from urllib import request
+# access request directly.
+mine = request()
+
+import urllib.request
+# used as urllib.request
+mine = urllib.request()
 ```
 
-```python
-import math
-```
+### More turtle tasks
+https://www.tutorialspoint.com/turtle-programming-in-python
