@@ -7,6 +7,16 @@ from pyrob.api import *
 def task_1_2():
     pass
 
+    for i in range(2):
+        move_right()
+        move_down()
+    else:
+        fill_cell()
 
-if __name__ == '__main__':
+    for i in range(2):
+        move_right()
+    move_down()
+
+
+if __name__ == "__main__":
     run_tasks()
