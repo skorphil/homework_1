@@ -8,5 +8,5 @@ def task_8_29():
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run_tasks()
