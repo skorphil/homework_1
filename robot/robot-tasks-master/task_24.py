@@ -8,5 +8,5 @@ def task_2_1():
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run_tasks()
