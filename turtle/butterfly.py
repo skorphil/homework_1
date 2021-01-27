@@ -9,6 +9,7 @@ radius = 40
 
 
 def draw_pair(radius):
+    """draw circles"""
     turtle.circle(radius)
     # turtle.right(90)
     turtle.circle(-radius)
