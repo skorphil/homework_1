@@ -22,23 +22,6 @@ def sub(point_1, point_2):
     return new_point
 
 
-def clear_window():
-    rectangle = gr.Rectangle(gr.Point(0, 0), gr.Point(SIZE_X, SIZE_Y))
-    rectangle.setFill("green")
-    rectangle.draw(window)
-
-    sun = gr.Circle(gr.Point(400, 400), 50)
-    sun.setFill("yellow")
-    sun.draw(window)
-
-
-def draw_ball(coords):
-    circle = gr.Circle(coords, 10)
-    circle.setFill("red")
-
-    circle.draw(window)
-
-
 def check_coords(coords, velocity):
     if coords.x < 0 or coords.x > SIZE_X:
         velocity.x = -velocity.x
@@ -64,14 +47,21 @@ def update_acceleration(ball_coords, center_coords):
     return gr.Point(-diff.x * G / distance_2, -diff.y * G / distance_2)
 
 
+circle = gr.Circle(coords, 10)
+circle.setFill("red")
+circle.draw(window)
+
+sun = gr.Circle(gr.Point(400, 400), 50)
+sun.setFill("yellow")
+sun.draw(window)
+
 while True:
-    clear_window()
-    draw_ball(coords)
+    circle.move(velocity.x, velocity.y)
 
     acceleration = update_acceleration(coords, gr.Point(400, 400))
 
     coords = update_coords(coords, velocity)
     velocity = update_velocity(velocity, acceleration)
-    check_coords(coords, velocity)
+    # check_coords(coords, velocity)
 
-    gr.time.sleep(0.02)
+    gr.time.sleep(0.002)

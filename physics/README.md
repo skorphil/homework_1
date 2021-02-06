@@ -9,3 +9,7 @@ self._canvas.delete(ALL)
 
 cant implement using graphics.py
 
+Simple bouncing physics
+https://physics.stackexchange.com/questions/117091/why-does-a-ball-bounce-lower
+
+
